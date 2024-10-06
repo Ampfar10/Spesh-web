@@ -76,9 +76,9 @@
 
     <script>
         document.getElementById("rsvpForm").addEventListener("submit", function (e) {
-            e.preventDefault();  // Prevent form from submitting
+            e.preventDefault();  
 
-            // Collect form data
+            
             const fullName = document.getElementById("fullName").value;
             const phoneNumber = document.getElementById("phoneNumber").value;
             const email = document.getElementById("email").value;
@@ -87,7 +87,7 @@
             const menu = document.getElementById("menu").value;
             const table = document.getElementById("table").value;
 
-            // Store form data in localStorage
+            
             localStorage.setItem("fullName", fullName);
             localStorage.setItem("phoneNumber", phoneNumber);
             localStorage.setItem("email", email);
@@ -96,7 +96,7 @@
             localStorage.setItem("menu", menu);
             localStorage.setItem("table", table);
 
-            // Redirect to confirmation page
+        
             window.location.href = "results.html";
         });
     </script>
